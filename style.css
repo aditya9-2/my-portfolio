@@ -1,0 +1,51 @@
+.fade-in {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.slide-up-fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 500ms, transform 500ms;
+}
+
+.slide-up-fade-in:active {
+    /* Magnify the image by 10% */
+    transform: translateY(50px) scale(1.1);
+}
+
+h1,
+h3,
+p {
+    /* Other styles */
+    transition: all 500ms;
+}
+
+h1:hover,
+h3:hover,
+p:hover {
+    /* Magnify the element by 10% */
+    transform: scale(1.1);
+}
+
+button.btn-primary:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #333;
+    transition: all 0.5s;
+}
+
+a.btn-primary:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #333;
+    transition: all 0.5s;
+}
+
+.animated-ul {
+    transition: all 0.5s ease-in-out;
+}
+
+.animated-ul:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #333;
+    opacity: 0.8;
+}
